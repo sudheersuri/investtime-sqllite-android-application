@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/datecardview"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/black"
+    android:elevation="20dp"
+    app:cardCornerRadius="20dp"
+   >
+
+    <RelativeLayout
+        android:id="@+id/mylayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/activitydate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="0.3"
+            android:textColor="#a9a9a9"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_right" />
+        <!--so our layout is set-->
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
